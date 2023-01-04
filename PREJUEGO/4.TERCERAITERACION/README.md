@@ -1,4 +1,0 @@
-# 8512_G2_ISW
-Grupo 2
-4. TERCERA ITERACIÓN
-
