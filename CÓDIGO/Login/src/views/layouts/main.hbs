@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INVENTORY SYSTEM</title>
+
+    <!-- Tailwind CSS Link -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+
+    <!-- Fontawesome Link -->
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
+  </head>
+  <body class="bg-gray-300">
+    <nav class="flex py-10 bg-blue-400 text-blue px-24">
+      <div class="w-1/2 px-20 mr-auto">
+        <h1 class="text-2xl font-bold">INVENTORY SYSTEM</h1>
+      </div>
+
+      <ul class="w-1/4 px-100 ml-auto flex justify-end pt-2">
+        {{#if name}}
+        <p>{{name}}</p>
+
+        <li class="nav-item px-4">
+          <a href="/logout" class="nav-link font-semibold bg-red-500 hover:bg-red-700 py-3 px-4 rounded-md">Logout</a>
+        </li>
+
+        {{else}}
+        <li class="nav-item px-4">
+          <a href="/index" class="nav-link font-semibold border-2 border-white hover:bg-yellow-700 py-3 px-4 rounded-md">Iniciar Sesión</a>
+        </li>
+
+        <li class="nav-item px-4">
+          <a href="/register" class="nav-link font-semibold border-2 border-white hover:bg-yellow-700 hover:text-white-700 py-3
+            px-4 rounded-md">Registrarse</a>
+        </li>
+        {{/if}}
+      </ul>
+    </nav>
+
+    {{{body}}}
+
+
+  </body>
+</html>
